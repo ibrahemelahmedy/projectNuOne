@@ -1,0 +1,71 @@
+* {
+    --o-box-sizing: border-box;
+    --webkit-box-sizing: border-box;
+    --moz-box-sizing: border-box;
+    --ms-box-sizing: border-box;
+
+}
+
+:root {
+    --main-color-logo: #2196f3;
+    --main-color-logo1: #000000;
+    --main-color-logo2: #ffffff;
+    --main-color-shadow: #03a9f4ad;
+
+}
+
+body {
+
+    font-family: 'Work Sans', sans-serif;
+
+    box-sizing: border-box;
+}
+
+.l1 {
+    background-color: #eee;
+    margin: auto;
+    width: 200px;
+    position: relative;
+    font-size: xx-large;
+    font-weight: bold;
+
+}
+
+h1 {
+    color: var(--main-color-logo, #2196f3);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1 {
+    color: var(--main-color-logo1, #000000);
+    text-shadow: 0px 0px 10px var(--main-color-shadow, #00000085);
+    font-weight: 400;
+    position: absolute;
+    top: -53.5%;
+    left: 48%;
+
+}
+
+.h2 {
+    color: var(--main-color-logo2, #ffffff);
+    text-shadow: 0px 0px 7px var(--main-color-shadow, #00000085);
+    top: -2px;
+    left: 41.7%;
+    position: absolute;
+
+}
+
+.h1::before {
+    content: "";
+    width: 52px;
+    height: 5px;
+    position: absolute;
+    top: 82%;
+    left: -4%;
+    background-color: red;
+    z-index: -1;
+
+}
